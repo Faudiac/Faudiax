@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+.top-bar {
+    width: 100%;
+    height: 5em;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background: orange;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thebody {
+    width: 99%;
+    height: auto;
+    margin-top: 5.5em;
+    position: relative;
+    background-color:;
+}
+
+.butncover {
+    width: 6em;
+    height: 8em;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px;
+    border-radius: 10px;
+    float: left;
+    background: rgb(155, 155, 155);
+}
+
+.support-fau {
+    width: 6em;
+    height: 6em;
+    top: 5px;
+    margin-left: 7px;
+    border: 3px solid orangered;
+    border-radius: 50px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sup-note {
+    margin-left: 7px;
+    top: 7px;
+}
+
+.main {
+    font-family: 'kenia', cursive;
+    font-size: 40px;
+    color: orangered;
+}
+
+.h2num1 {
+    margin-top: 3em;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.fauicon{
+    width: 70px;
+}
+
+.line1{
+    width: 90%;
+    height: 4px;
+    position: relative;
+    background: rgb(102, 102, 102);
+}
+
+.rounded-youtube{
+    color: #f44336;
+}
+
+{box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  position: relative;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 50px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@font-face {
+    font-family: mono;
+    src: url(ShareTechMono-Regular.ttf);
+}
+
+.Chatsapp-nav {
+    width: 98%;
+    height: 99%;
+    margin-left:;
+    margin-top: px;
+    border-radius: 10px;
+    background: rgb(6, 214, 6);
+    position: absolute;
+}
+
+.chat-locate {
+    width: 5em;
+    height: 98.5%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background: green;
+}
+
+.round-host-selected {
+    width: 4em;
+    height: 4em;
+    margin: 8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    float: none;
+    background: rgb(0, 77, 0);
+    color: greenyellow;
+    transition-duration: 500ms;
+}
+
+.round-host {
+    width: 4em;
+    height: 4em;
+    margin: 8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    float: none;
+    background: green;
+    color: greenyellow;
+    transition-duration: 500ms;
+}
+.round-host:hover{
+    background: rgb(0, 77, 0);
+    transform: rotate(360deg);
+}
+
+.cmd-main {
+    width: 4em;
+    height: 4em;
+    margin: 8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 36%;
+    float: none;
+    background: green;
+    color: greenyellow;
+    transition-duration: 500ms;
+}
+.cmd-main:hover{
+    background: rgb(0, 77, 0);
+    transform: rotate(360deg);
+}
+
+.search-location {
+    width: 17em;
+    height: 3em;
+    margin: 8px;
+    margin-left: 5.5em;
+    border-radius: 10px;
+    background: green;
+    position: absolute;
+}
+
+.butn-Searchitem {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 5px;
+    margin-left: 15em;
+    color: greenyellow;
+    background: green;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition-duration: 500ms;
+}
+
+.butn-Searchitem:hover {
+    background: rgb(0, 86, 0);
+    transform: rotate(360deg);
+}
+
+.FauBot {
+    position: absolute;
+    margin-top: 4em;
+    width: 17em;
+    height: 3em;
+    margin-left: 5.5em;
+    border-radius: 5px;
+    background: rgb(0, 86, 0);
+}
+
+.identify-name {
+    font-size: 100%;
+    font-family: mono;
+    color: greenyellow;
+    margin-left: 50px;
+}
+
+.pfppic-faubot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: linear-gradient(to right, orangered, orange);
+    border: 5px;
+    margin: 5px;
+    position: absolute;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: rgb(0, 255, 0);
+    border: 5px;
+    margin: 20px;
+    margin-left: 105px;
+    position: absolute;
+    filter: blur(1px);
+}
+
+.notification {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: red;
+    color: #fff;
+    border: 5px;
+    margin: 2px;
+    margin-left: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: mono;
+    filter: drop-shadow(2px 3px 5px rgb(0, 0, 0, .5));
+}
