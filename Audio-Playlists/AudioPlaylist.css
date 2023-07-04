@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(3, 3, 3);
+}
+
+.body {
+    width: 90%;
+    margin: 7em auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.body2 {
+  width: 90%;
+  margin: 1em auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.top-bar {
+    width: 100%;
+    height: 5em;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 88, 4, 0.12);
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.mainlogo {
+    font-family: 'kenia', cursive;
+    font-size: 40px;
+    color: orangered;
+    margin-left: 3.3em;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgb(9, 9, 9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  width: 90%;
+  height: 2em;
+  margin: 15px;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #3c3c3c;
+  background: rgba(255, 255, 255, 0);
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  background: #ff550044;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  border-radius: 50px;
+}
+
+@media screen and (max-height: 100px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.opennav {
+  width: 6em;
+  height: 6em;
+  left: 0px;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+  position: fixed;
+}
+
+.opennav:hover {
+  background: rgba(213, 77, 27, 0.484);
+}
+
+.LogoTop {
+  width: 80px;
+  position: absolute;
+  margin-left: 3.8em;
+}
+
+.Search-butn {
+  width: 1em;
+  height: 1em;
+  color: white;
+  right: 60px;
+  position: fixed;
+  border-radius: 50px;
+}
+
+.Search-butn:hover {
+  background: rgba(213, 77, 27, 0.484);
+}
+
+.search-container {
+    width: 90%;
+    margin: 3em auto;
+    height: 3em;
+    background: rgba(245, 222, 179, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 50px;
+  }
+
+.Profile-open {
+  color: white;
+  width: 1em;
+  height: 1em;
+  right: 25px;
+  position: fixed;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.Profile-open:hover {
+  background: rgba(213, 77, 27, 0.484);
+}
+
+.butns-nav {
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.091);
+}
+
+.Search-Nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.2s;
+}
+
+.Search-Nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.Search-Nav a:hover {
+  color: #f1f1f1;
+}
+
+.Search-Nav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 30px;
+  margin-left: px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .Search-Nav {
+    padding-top: 15px;
+  }
+  .Search-Nav a {
+    font-size: 18px;
+  }
+}
+
+/********* SEARCH **********/
+
+.Search-finder {
+  margin-left: 5px;
+  color: rgb(80, 80, 80);
+}
+
+.Search-finder:hover {
+  color: rgb(255, 255, 255);
+}
+
+.search-container2 {
+  width: 90%;
+  margin: 3em auto;
+  height: 3em;
+  background: rgba(245, 222, 179, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 50px;
+}
+
+#mySearch {
+  width: 98%;
+  height: 3em;
+  font-size: 14px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #000000;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.551);
+}
+
+.autocomplete-items div {
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #4b4b4b00; 
+  border-bottom: 1px solid #d4d4d400; 
+}
+
+.autocomplete-items div:hover {
+  background-color: #535353; 
+}
+
+.autocomplete-active {
+  background-color: rgb(255, 143, 30) !important; 
+  color: #ffffff; 
+}
+
+/****** OG *******/
+
+.di2 {
+    margin: 5em auto;
+    margin-left: 10px;
+    padding: 5px;
+    width: 90%;
+    height: 30%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .FauPlaybody {
+    width: 100%;
+    height: 46em;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    position: relative;
+    margin-top: 5em;
+    background: linear-gradient(orangered, rgb(228, 85, 33), rgb(215, 95, 51), rgb(237, 120, 81), rgb(241, 186, 144), rgb(249, 249, 249));
+  }
+  
+  .pfpbox {
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+  }
+  
+  .pfpsquare {
+    width: 100%;
+    border: 3px solid snow;
+    border-radius: 10px;
+    background: rgba(255, 250, 250, 0.319);
+  }
+  
+  .FauPLAYh1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 4.3em;
+    position: relative;
+  }
+  
+  .fauplayp {
+    font-size: 13px;
+    color: white; 
+    margin-left: 10em;
+    position: relative;
+    margin-bottom: 8%;
+  }
+  
+  .fauplayp-black {
+    font-size: 15px;
+    color: rgb(0, 0, 0); 
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  .followus {
+    width: 7.5em;
+    height: 2.5em;
+    margin-left: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(54, 54, 54);
+    background: #00000089;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .followus:hover{
+    background: rgba(255, 255, 255, 0.195);
+  }
+  
+  .followus2 {
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: 1px solid rgb(54, 54, 54);
+    background: #00000089;
+    color: white;
+    margin-bottom: 10px;
+    size: 10px;
+  }
+  
+  .followus2:hover{
+    background: rgba(255, 255, 255, 0.195);
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dddddd00;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 7px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #dddddd00;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f148;
+  }
+  
+  .audiobox {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .Audiobox-content {
+    position: relative;
+    top: 75%;
+    width: 95%;
+    margin-top: 30px;
+    margin: auto;
+    border-radius: 10px;
+    background: #000000;
+  }
+  
+  .AudioName {
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+  }
+  
+  .ControlAudio {
+    width: 4em;
+    height: 4em;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 0px;
+    background: transparent;
+    color: white;
+  }
+  
+  .ControlAudio:hover {
+    background: rgba(255, 255, 255, 0.233);
+  }
+  
+  .audiobox .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  
+  .audiobox .closebtn:hover {
+    color: #ccc;
+    background: rgba(255, 255, 255, 0.233);
+  }
+  
+  audio {
+    width: 90%;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.229);
+  }
+
+  .Playlist-auto {
+    width: 3em;
+    height: 3em;
+    background: rgb(94, 183, 94);
+    font-size: 20px;
+    border: 0px;
+    border-radius: 50px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax - (A)Playlists</title>
+    <link rel="stylesheet" href="AudioPlaylist.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/FauChat.png">
+</head>
+
+<body>
+    
+        <div class="FauPlaybody">
+
+          <div class="body2">
+            <div class="pfpbox">
+              <img src="../images/FauChat.png" alt="Faudiax pfp" class="pfpsquare">
+            </div>
+            
+            <h1 class="FauPLAYh1">Official Faudiax™</h1>
+      
+            <p class="fauplayp">
+              The Official Podcasts and tracks by the FaudyNEWS™.
+            </p>
+      
+              <button class="Playlist-auto">▷</button>
+
+            <button class="followus">Follow Us</button>
+
+            <button class="followus2">&#x2665;</button>
+      
+
+            <div class="line4"></div>
+      
+            <div class="search-container2">
+              <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search Podcasts by Official Faudiax™.." title="Type your search here">
+              <div class="lineverticle"></div> 
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+      
+            <div class="di2">
+              <ul id="myMenu">
+      
+                <table id="myTable">
+                  <tr>
+                    <td onclick="AudioPlay()">▷ FaudyNEWS Intro</td>
+                    <td>sfx</td>
+                    <td>00:15</td>
+                  </tr>
+                </table>
+              </ul>
+            </div>
+      
+            <script src="audioplay.js"></script>
+      
+            <div class="line4"></div>
+            
+            <p class="fauplayp-black">
+              Fodify's first playlist
+            </p>
+      
+          </div>
+        </div>
+
+
+        <div class="top-bar">
+
+          <img src="../images/FauChat.png" alt="" class="LogoTop">
+          <h1 class="mainlogo">Faudiax</h1>
+    
+          <button class="opennav" onclick="openNav()">☰</button> 
+    
+          <ion-icon name="search-outline" size="large" class="Search-butn" onclick="openSearch()"></ion-icon>
+    
+          <ion-icon name="person-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+    
+        </div>
+    
+        <!------ The profile nav bar ------->
+    
+          <div id="Profile-Nav" class="Search-Nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+    
+            <script>
+              function openProfile() {
+                document.getElementById("Profile-Nav").style.width = "100%";
+              }
+          
+              function closeProfile() {
+                document.getElementById("Profile-Nav").style.width = "0";
+              }
+            </script>
+    
+          </div>
+    
+    
+        <!------ The Search nav bar ------->
+    
+          <div id="Search-Nav" class="Search-Nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+    
+            <form autocomplete="off">
+              <div class="search-container">
+                <div class="autocomplete" style="width:95%;">
+                  <input type="search" id="mySearch" onchange="searchHistory() ,openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+                </div>
+                <div class="lineverticle"></div>
+                <a class="Search-finder" href="#">
+                  <ion-icon name="search-outline" size="large" class="Search-finder"></ion-icon>
+                </a> 
+              </div>
+            </form>
+            <script>
+              function openSearch() {
+                document.getElementById("Search-Nav").style.width = "100%";
+              }
+          
+              function closeSearch() {
+                document.getElementById("Search-Nav").style.width = "0";
+              }
+            </script>
+          </div>
+
+    <!------ The nav bar ------->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <div class="butns-nav">
+              <a href="../index.html">Home</a>
+              <a href="../About US.html">About</a>
+              <a href="">Download App</a>
+          </div>
+
+        <div class="line3"></div>
+
+          <div class="butns-nav">
+              <a href="Services.html">Terms</a>
+          </div>
+        
+      </div>
+  </div>
+    <!------ The nav bar ------->
+
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+    </script>
+
+    <div id="AudioPlayer" class="audiobox">
+        <div class="Audiobox-content">
+
+        <p class="AudioName">FaudyNEWS intro</p>
+        <p class="p">
+            The Official FaudyNEWS™ podcasts intro track.
+        </p>
+
+        <audio controls>
+            <source src="Audio/FaudyNews Intro.m4a">
+        </audio>
+
+        <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
+
+        </div>
+    </div>
+
+    <script>
+        function AudioPlay() {
+          document.getElementById("AudioPlayer").style.display = "block";
+        }
+  
+        function closeAudio() {
+          document.getElementById("AudioPlayer").style.display = "none";
+        }
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="../Search Results/Search-shf.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
