@@ -549,3 +549,25 @@ h4 {
   margin-left: 65px;
   color: white;
 }
+
+/********* PROFILE *********/
+
+.Profile_Tittle {
+  color: rgb(68, 138, 68);
+  margin: 30px;
+}
+
+.Username {
+    color: white;
+    margin: 30px;
+}
+
+.Password {
+  color: white;
+  margin: 30px;
+}
+
+.note {
+  color: rgb(255, 5, 5);
+  margin: 30px;
+}
