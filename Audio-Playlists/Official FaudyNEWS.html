@@ -7,6 +7,9 @@
     <title>Faudiax - (A)Playlists</title>
     <link rel="stylesheet" href="AudioPlaylist.css">
     <link rel="shortcut icon" type="x-icon" href="../images/FauChat.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
               The Official Podcasts and tracks by the FaudyNEWS™.
             </p>
       
-              <button class="Playlist-auto">▷</button>
+              <button class="Playlist-auto" onclick="ExpandAudio()">▷</button>
 
             <button class="followus">Follow Us</button>
 
@@ -167,19 +170,56 @@
     <div id="AudioPlayer" class="audiobox">
         <div class="Audiobox-content">
 
-        <p class="AudioName">FaudyNEWS intro</p>
-        <p class="p">
-            The Official FaudyNEWS™ podcasts intro track.
-        </p>
+          <div class="Audio-thumb">
+            <img src="../images/FauChat.png" alt="" width="90%" class="A-imgTHumb" onclick="ExpandAudio()">
+          </div>
 
-        <audio controls>
-            <source src="Audio/FaudyNews Intro.m4a">
-        </audio>
+          <button class="bruh" onclick="ExpandAudio()">Expand Player</button>
 
-        <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
+          <div class="buttons">
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+          </div>
+          
+          <p class="AudioName">FaudyNEWS intro</p>
+
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+
+          <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
 
         </div>
     </div>
+
+    <div id="AudioExpanded" class="audiobox-Expanded">
+      <div class="audioboxExpanded-content">
+
+        <div class="Audiothumb-Expanded">
+          <img src="../images/FauChat.png" alt="" width="90%" class="A-imgTHumb">
+        </div>
+        
+        <p class="AudioName-Expanded">FaudyNEWS intro</p>
+
+        <div class="buttons-Expanded">
+          <div class="playpause-track-expanded" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+          </div>
+        </div>
+
+        <div class="slider_container2">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider2" onchange="seekTo()">
+          <div class="total-duration">00:00</div>
+        </div>
+
+        <span class="closebtn" onclick="closeAudioExpanded()" title="Close Overlay">×</span>
+
+      </div>
+  </div>
 
     <script>
         function AudioPlay() {
@@ -191,11 +231,23 @@
         }
     </script>
 
+<script>
+  function ExpandAudio() {
+    document.getElementById("AudioExpanded").style.display = "block";
+  }
+
+  function closeAudioExpanded() {
+    document.getElementById("AudioExpanded").style.display = "none";
+  }
+</script>
+
     <script src="../script.js"></script>
+    <script src="Audio.js"></script>
     <script src="../Search Results/SearchFiles.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>
