@@ -121,7 +121,7 @@ body {
   margin-left: 3.8em;
 }
 
-.Search-butn {
+.Search-finder {
   width: 1em;
   height: 1em;
   color: white;
@@ -130,7 +130,7 @@ body {
   border-radius: 50px;
 }
 
-.Search-butn:hover {
+.Search-finder:hover {
   background: rgba(213, 77, 27, 0.484);
 }
 
@@ -203,13 +203,18 @@ body {
 
 /********* SEARCH **********/
 
-.Search-finder {
-  margin-left: 5px;
-  color: rgb(80, 80, 80);
+.MySearch-butn {
+  height: 1.4em;
+  margin-right: 8px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Search-finder:hover {
-  color: rgb(255, 255, 255);
+.MySearch-butn:hover{
+  color: orangered;
 }
 
 .search-container {
@@ -237,7 +242,7 @@ body {
 }
 
 #mySearch {
-  width: 98%;
+  width: 99%;
   height: 3em;
   font-size: 14px;
   margin-left: 10px;
@@ -245,6 +250,17 @@ body {
   background-color: transparent;
   border: 0px solid;
   outline: none;
+}
+
+#mySearch::-webkit-search-cancel-button{
+  position:relative;
+  right:20px;  
+
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius:10px;
+  background: red;
 }
 
 .autocomplete {
@@ -279,6 +295,11 @@ body {
 .autocomplete-active {
   background-color: rgb(255, 143, 30) !important; 
   color: #ffffff; 
+}
+
+.Slogo {
+  width: 50px;
+  box-shadow: none;
 }
 
 /********* SEARCH **********/
@@ -536,7 +557,7 @@ h4 {
   color: white;
   padding-top: 8px;
   margin-left: 4em;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .trackdiscription {
@@ -546,7 +567,7 @@ h4 {
 }
 
 .note-white {
-  margin-left: 65px;
+  margin-left: 30px;
   color: white;
 }
 
@@ -571,3 +592,6 @@ h4 {
   color: rgb(255, 5, 5);
   margin: 30px;
 }
+
+/********* PROFILE *********/
+
