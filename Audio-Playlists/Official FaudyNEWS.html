@@ -141,6 +141,15 @@
           <div class="butns-nav">
               <a href="Services.html">Terms</a>
           </div>
+
+          <div class="line3"></div>
+
+          <div class="butns-nav">
+            <a href="#">FauChat</a>
+          </div>
+          <div class="butns-nav">
+            <a href="https://faudiac.github.io/OfficialFaudyNEWS/">FaudyNEWS</a>
+          </div>
         
       </div>
   </div>
@@ -174,7 +183,7 @@
             <img src="../images/FauChat.png" alt="" width="90%" class="A-imgTHumb" onclick="ExpandAudio()">
           </div>
 
-          <button class="bruh" onclick="ExpandAudio()">Expand Player</button>
+          <button class="bruh" onclick="">#Faudiax</button>
 
           <div class="buttons">
             <div class="playpause-track" onclick="playpauseTrack()">
@@ -195,32 +204,6 @@
         </div>
     </div>
 
-    <div id="AudioExpanded" class="audiobox-Expanded">
-      <div class="audioboxExpanded-content">
-
-        <div class="Audiothumb-Expanded">
-          <img src="../images/FauChat.png" alt="" width="90%" class="A-imgTHumb">
-        </div>
-        
-        <p class="AudioName-Expanded">FaudyNEWS intro</p>
-
-        <div class="buttons-Expanded">
-          <div class="playpause-track-expanded" onclick="playpauseTrack()">
-            <i class="fa fa-play-circle fa-5x"></i>
-          </div>
-        </div>
-
-        <div class="slider_container2">
-          <div class="current-time">00:00</div>
-          <input type="range" min="1" max="100" value="0" class="seek_slider2" onchange="seekTo()">
-          <div class="total-duration">00:00</div>
-        </div>
-
-        <span class="closebtn" onclick="closeAudioExpanded()" title="Close Overlay">×</span>
-
-      </div>
-  </div>
-
     <script>
         function AudioPlay() {
           document.getElementById("AudioPlayer").style.display = "block";
@@ -230,16 +213,6 @@
           document.getElementById("AudioPlayer").style.display = "none";
         }
     </script>
-
-<script>
-  function ExpandAudio() {
-    document.getElementById("AudioExpanded").style.display = "block";
-  }
-
-  function closeAudioExpanded() {
-    document.getElementById("AudioExpanded").style.display = "none";
-  }
-</script>
 
     <script src="../script.js"></script>
     <script src="Audio.js"></script>
