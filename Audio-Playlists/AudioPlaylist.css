@@ -308,7 +308,7 @@ body {
     left: 0;
     bottom: 0px;
     position: relative;
-    margin-top: 5em;
+    margin-top: 6em;
     background: linear-gradient(orangered, rgb(228, 85, 33), rgb(215, 95, 51), rgb(237, 120, 81), rgb(241, 186, 144), rgb(249, 249, 249));
   }
   
@@ -661,22 +661,6 @@ padding: 10px;
       color: rgb(255, 255, 255);
   }
   
-  .repeat-track,
-  .random-track,
-  .playpause-track,
-  .prev-track,
-  .next-track {
-    
-  }
-  
-  .repeat-track:hover,
-  .random-track:hover,
-  .playpause-track:hover,
-  .prev-track:hover,
-  .next-track:hover {
-
-  }
-
 i,
 i.fa-play-circle,
 i.fa-pause-circle,
@@ -687,4 +671,25 @@ cursor: pointer;
 }
 .randomActive{
   color: rgb(255, 255, 255);
+}
+
+.GoBack {
+  width: 2em;
+  height: 2em;
+  top: 0px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.064);
+  color: white;
+  border-radius: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+}
+
+.GoBack:hover{
+  background-color: #fa590f83;
 }
