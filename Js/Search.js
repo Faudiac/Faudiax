@@ -11,8 +11,15 @@ function openPage() {
   
   if (x === "Faudynews") {
     window.open("Search Results/R=FaudyNEWS.html");
- }
+  }
 
+  if (x === "Faudynews") {
+    window.open("Search Results/R=FaudyNEWS.html");
+  }
+
+  else {
+    window.open("Search Results/404.html");
+  }
 }
 
   function autocomplete(inp, arr) {
