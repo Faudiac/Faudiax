@@ -8,6 +8,10 @@ function openPage() {
   if (x === "Monsters curiosity") {
      window.open("./Movies/MonstersCuriosity.html");
   }
+
+  if (x === "Teddies warfair") {
+    window.open("./Movies/MonstersCuriosity.html");
+ }
   
   if (x === "Faudynews") {
     window.open("Search Results/R=FaudyNEWS.html");
