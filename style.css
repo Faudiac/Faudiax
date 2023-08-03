@@ -652,7 +652,7 @@ h4 {
     overflow: hidden;
     box-shadow: 0px 2px 10px 0px #a63107;
     margin: 7em auto;
-    min-height: 60em;
+    min-height: em;
     cursor: pointer;
 }
 .movie-img
