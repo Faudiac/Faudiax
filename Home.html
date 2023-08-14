@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax | AppBeta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="./images/FauChat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+
+    <!---STar MOVIE --->
+    <div class="movie-card">
+      <div class="movie-img"> 
+       <img src="images/Teddies Warfair 2.png">     
+      </div>
+      <div class="card-body">
+       <h2 class="movie-title">Teddies Warfair (2019)</h2>
+       <p class="movie-intro">A battle breaks in the dimension of teddy bear after some documents of a file was leaked to the public.</p>   
+       
+       
+       <div class="line"></div>
+
+       <a href="Movies/TeddiesWarfair.html">
+          <div class="Watch_trailer"> <span>▶︎</span> See more </div>
+       </a>
+
+      </div>    
+     </div>
+
+    <div class="body">
+    
+    <!---STar MOVIE --->
+
+    <!--- TOP Hits --->
+
+    <div class="body">
+      <h2 class="Top-Hits">Top Hits</h2>
+
+      <div class="line-Tops"></div>
+
+      <div class="Movies-container">
+        
+        <a href="./Faudynews | shows/ShowView.html">
+            <img src="images/Faudynews Thumb.png" alt="MoviePoster" class="Movie-Poster">
+        </a>
+
+      </div>
+      <!--- FaudyNEWS --->
+
+      <h2 class="Top-Hits">Top Shows</h2>
+
+      <div class="line-Tops"></div>
+
+      <div class="Movies-container">
+        <a href="Faudynews | shows/ShowView.html">
+          <img src="images/Faudynews Thumb.png" alt="MoviePoster" class="Movie-Poster">
+        </a>
+      </div>
+    </div>
+
+    <!----------------------Explore more------------------------------->
+
+    <div class="body">
+
+      <h2 class="Top-Hits">Explore more</h2>
+
+      <div class="line-Tops"></div>
+
+      <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('video')"> Trailers</button>
+          <button class="btn" onclick="filterSelection('Shows')"> Shows</button>
+          <button class="btn" onclick="filterSelection('Audio')"> Podcasts </button>
+      </div>
+        
+        <!-- Portfolio Gallery Grid -->
+      <div class="row">
+
+          <a href="./Audio-Playlists/Official FaudyNEWS.html">
+              <div class="column Audio">
+                  <div class="content">
+                      <img src="./images/FauChat.png" alt="Thumbnail" style="width:100%">
+                      <div class="Box-container">
+                          <h4>FaudyNEWS</h4>
+                          <p>Audio-Playlist</p>
+                      </div>
+                  </div>
+              </div>
+          </a>
+
+          <a href="./Faudynews | shows/ShowView.html">
+            <div class="column Shows">
+                <div class="content">
+                    <img src="./images/Faudynews Thumb.png" alt="Thumbnail" style="width: 100%">
+                    <div class="Box-container">
+                        <h4>FaudyNEWS</h4>
+                        <p>News show</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+          
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+      </div>
+    </div>
+
+
+    <div class="top-bar">
+
+      <img src="./images/FauChat.png" alt="" class="LogoTop">
+      <h1 class="mainlogo">Faudiax</h1>
+
+      <ion-icon name="person-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+
+    </div>
+
+    <div class="botto">
+        <div class="bottombody">
+
+            <a href="Home.html" class="Bottombar-Search_active">
+                <ion-icon name="home-outline" size="large"></ion-icon>
+            </a>
+    
+            <a href="Search/Search.html" class="Bottombar-Search">
+                <ion-icon name="search-outline" size="large"></ion-icon>
+            </a>
+    
+            <a href="Faudynews/FaudyNews.html" class="Bottombar-Search">
+                <ion-icon name="newspaper-outline" size="large"></ion-icon>
+            </a>
+    
+            <a href="About US.html" class="Bottombar-Search">
+                <ion-icon name="apps-outline" size="large"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!------ The profile nav bar ------->
+
+      <div id="Profile-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+
+        <div class="body"></div>
+
+          <h3 class="Profile_Tittle">Profile</h3>
+
+          <div class="Profile-img"></div>
+
+          <div class="Username"> User Name : Guest 12t329fau.diax0021</div>
+          <div class="Password"> Password : Not Availible</div>
+
+          <div class="note">To make an account download the Faudiax App</div>
+        </div>
+
+        <script>
+          function openProfile() {
+            document.getElementById("Profile-Nav").style.width = "100%";
+          }
+      
+          function closeProfile() {
+            document.getElementById("Profile-Nav").style.width = "0";
+          }
+        </script>
+
+      </div>
+
+
+    <!------ The Search nav bar ------->
+
+    <!------ The Search nav bar -------> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+      }
+
+      function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+      }
+
+      function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+      }
+      element.className = arr1.join(" ");
+      }
+
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+      });
+      }
+    </script>
+  
+    <script src="js/script.js"></script>
+    <script src="js/Search.js"></script>
+
+  </body>
+
+</html>

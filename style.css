@@ -13,13 +13,19 @@ body {
   margin: 5em auto;
 }
 
+.body2 {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+}
+
 .top-bar {
     width: 100%;
     height: 5em;
     right: 0px;
     left: 0px;
     top: 0px;
-    background: rgba(255, 88, 4, 0.12);
+    background: rgba(255, 88, 4, 0);
     position: fixed;
     display: flex;
     align-items: center;
@@ -29,96 +35,52 @@ body {
     font-family: 'kenia', cursive;
     font-size: 40px;
     color: orangered;
-    margin-left: 3.3em;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgb(9, 9, 9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.butns-nav {
-  width: 90%;
-  margin: 2em auto;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.091);
-}
-
-.overlay a {
-  width: 95%;
-  height: 2em;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #d0d0d0;
-  display: block;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-  background: #ff55008c;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  border-radius: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-
-.opennav {
-  width: 6em;
-  height: 6em;
-  left: 0px;
-  color: white;
-  background: rgba(0, 0, 0, 0);
-  border: 0px;
-  position: fixed;
-}
-
-.opennav:hover {
-  background: rgba(213, 77, 27, 0.484);
+    margin-left: 1.7em;
 }
 
 .LogoTop {
   width: 80px;
   position: absolute;
-  margin-left: 3.8em;
+}
+
+.bottombody {
+  width: 90%;
+  border-radius: 50px;
+  bottom: 10px;
+  margin: auto;
+  align-self: center;
+  position: fixed;
+  left: 5%;
+  background: orangered;
+}
+
+.Bottombar-Search {
+  width: 25%;
+  height: 4em;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search_active {
+  width: 25%;
+  height: 4em;
+  bottom: 0px;
+  border-radius: 50px;
+  background: rgba(255, 149, 0, 0.886);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search:hover {
+  background: rgba(255, 255, 255, 0.095);
 }
 
 .Search-finder {
@@ -642,6 +604,7 @@ h4 {
 /*******  ********/
 
 
+
 /******* Video Player ********/
 
 .movie-card
@@ -703,4 +666,74 @@ h4 {
   color: white;
   width: 8.5em;
   height: 3.5em;
+}
+
+/********************************FAUDY BEWS ********************************************/
+
+.news-link {
+  width: 100%;
+  height: 8em;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.news-link:hover {
+  background: rgba(255, 255, 255, 0.033);
+}
+
+.news-thumb {
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 20px;
+  box-shadow: none;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.Text-link {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 14em;
+  font-size: 13px;
+  border: 0px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.label {
+  margin-top: 10px;
+  margin-left: 12em;
+  background: orangered;
+  width: 4em;
+  height: 1.5em;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.vidname2 {
+  font-size: 20px;
+  color: white;
+  padding-top: 15px;
+  margin-left: 5.5em;
+}
+
+.GuestButn {
+  border: 1px solid rgb(255, 98, 0);
+  background-color: #ffffff00;
+  color: rgb(255, 98, 0);
+  padding: 16px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 50px;
+  opacity: 0.9;
+}
+
+.GuestButn:hover {
+  background-color: #ff6200d7;
+  color: white;
+  padding: 20px;
 }
