@@ -2,12 +2,16 @@ function openPage() {
     var x = document.getElementById("mySearch").value;
   
     if (x === "Home") {
-      window.open("../index.html");
+      window.open("../Home.html");
     }
-  
+
     if (x === "Monsters curiosity") {
        window.open("../Movies/MonstersCuriosity.html");
     }
+
+    if (x === "Teddies warfare") {
+      window.open("R=TeddiesWarfare.html");
+   }
     
     if (x === "Faudynews") {
       window.open("../Search Results/R=FaudyNEWS.html");
@@ -116,6 +120,12 @@ function openPage() {
     }
     
     /*An array containing all the country names in the world:*/
-    var countries = [ "Home", "Monsters curiosity", "Faudynews",]
+    var countries = [ 
+      
+    "Home", 
+    
+    "Monsters curiosity", "Faudynews", "Teddies warfare",
+    
+    "Faudiax", "About!"]
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
     autocomplete(document.getElementById("mySearch"), countries);
