@@ -2,6 +2,11 @@ body {
     background: black;
 }
 
+.body {
+  width: 60%;
+  margin: 2em auto;
+}
+
 body .card {
     height: 100%;
     width: 100%;
@@ -35,6 +40,7 @@ body .card {
   body .card #message-section #user {
     position: relative;
     bottom: 0;
+    float: left;
     font-size: 18px;
     border: 1px solid #777;
     background-color: #938c8c00;
