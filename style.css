@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
 body {
-  background: black;
+  background: white;
   padding: 0;
   margin: 0;
 }
@@ -83,6 +83,35 @@ body {
   background: rgba(255, 255, 255, 0.095);
 }
 
+.SideNAV-Search {
+  width: 80%;
+  height: 2em;
+  right: 0px;
+  margin-left: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 85, 0, 0.169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.SideNAV-Search_active {
+  width: 80%;
+  height: 2em;
+  right: 0px;
+  margin-left: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 85, 0, 0.886);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Search-finder {
   width: 1em;
   height: 1em;
@@ -97,7 +126,7 @@ body {
 }
 
 .Profile-open {
-  color: white;
+  color: rgb(0, 0, 0);
   width: 1em;
   height: 1em;
   right: 25px;
@@ -130,7 +159,7 @@ body {
   background-color: #000000;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .Search-Nav a {
@@ -208,7 +237,7 @@ body {
   height: 3em;
   font-size: 14px;
   margin-left: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 113, 47);
   background-color: transparent;
   border: 0px solid;
   outline: none;
@@ -232,14 +261,14 @@ body {
 
 .autocomplete-items {
   position: absolute;
-  border: 1px solid #000000;
+  border: 0px solid #000000;
   border-bottom: none;
   border-top: none;
   z-index: 99;
   top: 100%;
   left: 0;
   right: 0;
-  color: rgba(255, 255, 255, 0.551);
+  color: rgba(0, 0, 0, 0.551);
 }
 
 .autocomplete-items div {
@@ -256,7 +285,7 @@ body {
 
 .autocomplete-active {
   background-color: rgb(255, 143, 30) !important; 
-  color: #ffffff; 
+  color: #000000; 
 }
 
 .Slogo {
@@ -287,7 +316,7 @@ body {
 /********* SEARCH **********/
 
 .PARA {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 17px;
   font-family: sans-serif;
   line-height: 23px;
@@ -296,7 +325,7 @@ body {
 }
 .PARA2 {
   margin-top: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 17px;
   font-family: sans-serif;
   line-height: 23px;
@@ -317,10 +346,11 @@ body {
 }
 
 .Top-Hits {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'kenia', cursive;
   font-size: 30px;
   margin: 15px;
+  text-align: center;
 }
 
 .line-Tops {
@@ -342,6 +372,37 @@ body {
   position: relative;
   margin-top: 10px;
   background: rgba(135, 135, 135, 0.133);
+}
+
+.Art-container {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: rgba(135, 135, 135, 0.368);
+}
+
+.Art-piece {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ArtCHIPS {
+  border-radius: 50px;
+  width: 8em;
+  height: 3em;
+  font-size: 18px;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.ArtCHIPS:hover {
+  width: 8.3em;
+  height: 3.3em;
 }
 
 .Movie-Poster {
@@ -404,7 +465,7 @@ h4 {
   border-bottom-right-radius: 10px;
   background-color: #f1f1f11a;
   margin-bottom: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .followbutn {
@@ -449,7 +510,7 @@ h4 {
 
 /* Content */
 .content {
-  background-color: rgba(255, 255, 255, 0.128);
+  background-color: rgba(49, 49, 49, 0.128);
   margin: 10px;
   border-radius: 10px;
 }
@@ -467,7 +528,7 @@ h4 {
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.102);
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 50px;
 }
 
@@ -476,7 +537,7 @@ h4 {
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #ff9100;
   color: white;
 }
 
@@ -492,7 +553,7 @@ h4 {
 }
 
 .trackcontainer:hover {
-  background: rgba(255, 255, 255, 0.099);
+  background: rgba(52, 52, 52, 0.099);
 }
 
 .Thumbnail-circle {
@@ -502,7 +563,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border: 3px solid white;
-  background: rgba(255, 255, 255, 0.13);
+  background: rgba(65, 65, 65, 0.13);
   margin: 5px;
   margin-top: 10px;
   position: absolute;
@@ -510,14 +571,14 @@ h4 {
 }
 
 .Trackname {
-  color: white;
+  color: rgb(69, 69, 69);
   padding-top: 8px;
   margin-left: 4em;
   font-size: 27px;
 }
 
 .trackdiscription {
-  color: rgba(255, 255, 255, 0.577);
+  color: rgba(0, 0, 0, 0.577);
   margin-left: 7em;
   margin-bottom: 5px;
 }
@@ -558,8 +619,8 @@ h4 {
   height: 2em;
   top: 0px;
   left: 20px;
-  background: rgba(255, 255, 255, 0.064);
-  color: white;
+  background: rgba(41, 40, 40, 0.064);
+  color: rgb(255, 82, 63);
   border-radius: 50px;
   position: fixed;
   display: flex;
@@ -610,7 +671,7 @@ h4 {
 .movie-card
 {
     background-color: #0c0c0c;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 2px 10px 0px #a63107;
@@ -736,4 +797,33 @@ h4 {
   background-color: #ff6200d7;
   color: white;
   padding: 20px;
+}
+
+.aurthors-info {
+  width: 100%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.GoBACK {
+  width: 8em;
+  height: 3em;
+  margin-top: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+.GoBACK:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  padding: px;
+}
+
+a {
+  color: orangered;
 }

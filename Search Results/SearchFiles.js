@@ -6,7 +6,7 @@ function openPage() {
     }
 
     if (x === "Monsters curiosity") {
-       window.open("../Movies/MonstersCuriosity.html");
+       window.open("../Search Results/404.html");
     }
 
     if (x === "Teddies warfare") {
