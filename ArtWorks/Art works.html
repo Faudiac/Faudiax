@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiax | AppBeta</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/FauChat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+
+        <div class="movie-card">
+            <div class="movie-img"> 
+             <img src="../images/Art works/972381F0-6CBD-490A-AA05-7F3F5E87CA0A.jpg">     
+            </div>
+            <div class="card-body">
+             <h2 class="movie-title">Vodaka and Orange</h2>
+             <p class="movie-intro">This is a simple oil pastle drawing of a bottle, a cup and an orange...</p>   
+             
+             
+             <div class="line"></div>
+      
+             <a href="Art1.html">
+                <div class="Watch_trailer"> <span>▶︎</span> See more </div>
+             </a>
+      
+            </div>    
+        </div>
+
+
+      <h2 class="Top-Hits">discover Faudiax</h2>
+
+      <div class="scroll-container">
+        <img src="../images/FauChat.png" alt="Cinque Terre" width="" height="400">
+        <img src="../images/Art works/972381F0-6CBD-490A-AA05-7F3F5E87CA0A.jpg " alt="Forest" width="" height="400">
+      </div>
+
+      <div class="body">
+
+        <div class="body">
+            <h2 class="Top-Hits"> A great story </h2>
+      
+            <div class="line-Tops"></div>
+      
+            <div class="Art-container">
+                <img src="../images/Art works/hehe.jpeg" alt="MoviePoster" class="Art-piece_nazi">
+
+                <p class="PARA2">WARNING this image is not political. </p>   
+             
+                <a href="Books.html">
+                  <button class="ArtCHIPS">Read Preview !</button>
+                </a>
+            </div>
+
+        </div>
+      
+
+      </div>
+
+        <div class="top-bar">
+
+            <img src="../images/FauChat.png" alt="" class="LogoTop">
+            <h1 class="mainlogo">Faudiax Arts</h1>
+      
+            <ion-icon name="caret-back-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+
+        </div>
+
+        <div class="botto">
+            <div class="bottombody">
+    
+                <a href="../Home.html" class="Bottombar-Search">
+                    <ion-icon name="home-outline" size="large"></ion-icon>
+                </a>
+        
+                <a href="../Search Results/Search.html" class="Bottombar-Search">
+                  <ion-icon name="search" size="large"></ion-icon>
+                </a>
+        
+                <a href="#" class="Bottombar-Search_active">
+                    <ion-icon name="color-palette" size="large"></ion-icon>
+                </a>
+        
+                <a href="../About US.html" class="Bottombar-Search">
+                    <ion-icon name="apps-outline" size="large"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Profile-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+
+        <div class="body"></div>
+
+        </div>
+
+        <script>
+          function openProfile() {
+            document.getElementById("Profile-Nav").style.width = "80%";
+          }
+      
+          function closeProfile() {
+            document.getElementById("Profile-Nav").style.width = "0";
+          }
+        </script>
+
+    </div>
+
+    <!------ The Search nav bar -------> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="SearchFiles.js"></script>
+
+  </body>
+
+</html>
+
+<style>
+    div.scroll-container {
+      background-color: #48474785;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
+    
+    div.scroll-container img {
+      padding: 10px;
+    }
+
+    .Art-piece_nazi {
+     width: 100%;
+      transition: 0.3s;
+      filter: blur(20px);  /*		<----- required			*/
+    }
+
+    .Art-piece_nazi:hover {
+      filter: blur(0);    /*		<----- required			*/
+    }
+</style>
