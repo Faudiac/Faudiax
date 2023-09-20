@@ -313,6 +313,19 @@ body {
   margin-right: auto;
   width: 60%;
 }
+
+.recommended_search {
+  width: 100%;
+  height: 3em;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.recommended_search:hover {
+  background: rgba(140, 140, 140, 0.611);
+}
+
 /********* SEARCH **********/
 
 .PARA {
@@ -826,4 +839,15 @@ h4 {
 
 a {
   color: orangered;
+}
+
+div.scroll-container {
+  background-color: #48474700;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
 }
