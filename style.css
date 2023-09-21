@@ -268,6 +268,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
+  background: rgb(177, 177, 177);
   color: rgba(0, 0, 0, 0.551);
 }
 
@@ -280,7 +281,7 @@ body {
 }
 
 .autocomplete-items div:hover {
-  background-color: #535353; 
+  background-color: #7a7a7a; 
 }
 
 .autocomplete-active {
@@ -441,7 +442,6 @@ h2 {
 h4 {
   padding: 10px;
   margin-bottom: 5px;
-  font-size: 20px;
   color: rgb(81, 166, 81);
 }
 

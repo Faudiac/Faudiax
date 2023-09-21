@@ -57,11 +57,18 @@
 
       <div class="line-Tops"></div>
 
-      <div class="Movies-container">
+      <div class="scroll-container">
         <a href="Faudynews | shows/ShowView.html">
-          <img src="images/Faudynews Thumb.png" alt="MoviePoster" class="Movie-Poster">
+          <img src="images/Faudynews Thumb.png" alt="Forest" width="" height="400">
+        </a>
+        <a href="Audio-Playlists/Official FaudyNEWS.html">
+          <img src="images/Faudynews Thumb.png" alt="Forest" width="" height="400">
+        </a>
+        <a href="Movies/TeddiesWarfair.html">
+          <img src="images/Teddies warfare.jpeg" alt="Forest" width="" height="400">
         </a>
       </div>
+
     </div>
 
     <!----------------------Explore more------------------------------->
@@ -74,6 +81,7 @@
 
       <div id="myBtnContainer">
           <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('Art')"> Art </button>
           <button class="btn" onclick="filterSelection('video')"> Trailers</button>
           <button class="btn" onclick="filterSelection('Shows')"> Shows</button>
           <button class="btn" onclick="filterSelection('Audio')"> Podcasts </button>
@@ -82,29 +90,53 @@
         <!-- Portfolio Gallery Grid -->
       <div class="row">
 
-          <a href="./Audio-Playlists/Official FaudyNEWS.html">
-              <div class="column Audio">
-                  <div class="content">
-                      <img src="./images/FauChat.png" alt="Thumbnail" style="width:100%">
-                      <div class="Box-container">
-                          <h4>FaudyNEWS</h4>
-                          <p>Audio-Playlist</p>
-                      </div>
+        <a href="./Faudynews | shows/ShowView.html">
+          <div class="column Shows">
+              <div class="content">
+                  <img src="./images/Faudynews Thumb.png" alt="Thumbnail" style="width: 100%">
+                  <div class="Box-container">
+                      <h4>FaudyNEWS</h4>
+                      <p>News show</p>
                   </div>
               </div>
-          </a>
+          </div>
+        </a>
 
-          <a href="./Faudynews | shows/ShowView.html">
-            <div class="column Shows">
+        <a href="ArtWorks/Art1.html">
+          <div class="column Art">
+              <div class="content">
+                  <img src="./images/Art works/972381F0-6CBD-490A-AA05-7F3F5E87CA0A.jpg" alt="Thumbnail" style="width: 100%">
+                  <div class="Box-container">
+                      <h4>Vodka & Orange</h4>
+                      <p>Art</p>
+                  </div>
+              </div>
+          </div>
+        </a>
+        
+          <a href="ArtWorks/Art2.html">
+            <div class="column Art">
                 <div class="content">
-                    <img src="./images/Faudynews Thumb.png" alt="Thumbnail" style="width: 100%">
+                    <img src="./images/Art works/93AC840B-5F05-4DF2-B9C5-25ADA135E8C0.jpeg" alt="Thumbnail" style="width: 100%">
                     <div class="Box-container">
-                        <h4>FaudyNEWS</h4>
-                        <p>News show</p>
+                        <h4>A tomato</h4>
+                        <p>Art</p>
                     </div>
                 </div>
             </div>
-        </a>
+          </a>
+
+          <a href="./Movies/TeddiesWarfair.html">
+            <div class="column video">
+                <div class="content">
+                    <img src="./images/Teddies Warfair.png" alt="Thumbnail" style="width: 100%">
+                    <div class="Box-container">
+                        <h4>Teddies warfare</h4>
+                        <p>trailer</p>
+                    </div>
+                </div>
+            </div>
+          </a>
           
         <!-- END GRID -->
         </div>
