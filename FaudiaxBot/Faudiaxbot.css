@@ -54,7 +54,7 @@ body {
   height: 4em;
   bottom: 0px;
   border-radius: 50px;
-  background: rgba(255, 85, 0, 0.886);
+  background: rgba(255, 85, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,8 +99,8 @@ body .card {
     width: 10px;
   }
   body .card #message-section {
-    height: 45em;
-    padding: 0 2.5vw;
+    height: 42em;
+    padding: 0vw;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
@@ -153,12 +153,12 @@ body .card {
   }
   body .card #input-section {
     z-index: 1;
-    margin: 1em auto;
-    padding: 0 1vw;
+    margin: 0.5em auto;
+    padding: 0 2vw;
     display: flex;
     align-items: center;
     height: 3em;
-    width: 90%;
+    width: 80%;
     border-radius: 50px;
     border: 1px solid white;
     background: rgba(245, 222, 179, 0);
@@ -168,7 +168,7 @@ body .card {
     outline: none;
     height: 3em;
     font-size: 16px;
-    width: 96%;
+    width: 95%;
     border: 0;
     background: transparent;
   }
@@ -182,7 +182,7 @@ body .card {
     padding: 0;
     position: relative;
     outline: none;
-    font-size: 20px;
+    font-size: 30px;
   }
   body .card .send .circle {
     position: relative;
