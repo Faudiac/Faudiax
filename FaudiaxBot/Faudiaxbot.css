@@ -1,5 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
 body {
-    background: black;
+    background: rgb(0, 0, 0);
+}
+
+.HomeBODY {
+  width: 100%;
+  margin: 6em auto;
+}
+
+.top-bar {
+  width: 100%;
+  height: 5em;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-bar {
+  width: 100%;
+  height: 4em;
+  border-radius: 50px;
+  margin: auto;
+  align-self: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: orangered;
+}
+
+.Bottombar-Search {
+  width: 33%;
+  height: 4em;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search_active {
+  width: 33%;
+  height: 4em;
+  bottom: 0px;
+  border-radius: 50px;
+  background: rgba(255, 85, 0, 0.886);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search:hover {
+  background: rgba(255, 255, 255, 0.095);
+}
+
+.mainlogo {
+  font-family: 'kenia', cursive;
+  font-size: 40px;
+  color: orangered;
+  margin-left: 1.7em;
+}
+
+.LogoTop {
+width: 80px;
+position: absolute;
 }
 
 .body {
@@ -8,10 +84,11 @@ body {
 }
 
 body .card {
+    margin: 4.6em auto;
     height: 100%;
     width: 100%;
-  
-  }
+    position: fixed;
+  } 
   body .card #header {
     height: 5vw;
     background: #000;
@@ -65,7 +142,7 @@ body .card {
   body .card #message-section .message {
     color: #ffffff;
     clear: both;
-    line-height: 1.2vw;
+    line-height: 5vw;
     font-size: 1.2vw;
     padding: 8px;
     position: relative;
@@ -121,3 +198,293 @@ body .card {
     margin-left: 2vw;
     margin-top: vw;
   }
+
+
+/********************************* FAUCHAT ***********************************/
+
+.StoryPost_box {
+  width: 90%;
+  height: auto;
+  margin: 5em auto;
+  border-radius: 10px;
+  border: 1px solid rgb(234, 84, 24);
+  background: rgba(234, 84, 24, 0.059);
+  box-shadow: 0px 0px 10px 5px var(rgb(0, 94, 255));
+}
+
+.Story_PfP {
+  width: 4.5em;
+  height: 4.5em;
+  margin: 15px;
+  border-radius: 50px;
+  background: white;
+  border: 2px solid rgb(255, 128, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Profile_PfP {
+  width: 4.5em;
+  height: 4.5em;
+  margin: 15px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.193);
+  border: 2px solid rgb(255, 128, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Profile_PfP2 {
+  width: 4.5em;
+  height: 4.5em;
+  margin-left: 7em;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.193);
+  border: 2px solid rgb(255, 128, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.line-1 {
+  width: 90%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.503);
+  margin: 1em auto;
+}
+
+.Storypfp_name {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  margin: 1.5em;
+  margin-left: 4.5em;
+}
+
+.Story_description {
+  color: white;
+  margin: 15px;
+}
+
+.Post_VidPlayer {
+  width: 90%;
+  margin: 18px;
+  border-radius: 10px;
+}
+
+
+.like-area{
+  width:100%;
+  float: left;
+}
+.like-area ul{
+  list-style: none;
+  margin: 0px
+}
+.like-area ul li{
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.like-area ul li a{
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 0.146);
+  border-radius: 50px;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  -webkit-user-select: none; /* Safari */      
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.like-area ul li a:hover {
+  background-color: rgba(255, 111, 0, 0.146);
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.like-area ul li a:active {
+  background-color: rgba(255, 111, 0, 0.993);
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.like-no{
+  font-size: 20px;
+}
+.like-area i{
+  float: left;
+}
+.like-area .fas{
+  font-size: 0px;
+}
+.like-active .fas{
+ font-size: 25px;
+}
+.like-active .far{
+ font-size: 0px;
+}
+
+.chip{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #eabbbb49;
+  border: 1px solid rgb(65, 65, 65);
+  cursor: default;
+  height: 36px;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-family:"Open Sans", sans-serif;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  justify-content: center;
+  margin: 10px;
+}
+.chip-head{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #ef600c;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  align-items: center;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+  width: 36px;
+  color: #fff;
+  height: 36px;
+  font-size: 20px;
+  margin-right: -1px;
+}
+.chip-content{
+  cursor: inherit;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.chip-svg{
+      color: #999999;
+  cursor: pointer;
+  height: auto;
+  margin: 4px 4px 0 -8px;
+fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.chip-svg:hover{
+  color: #666666;
+}
+
+video {
+  padding: 10px;
+  width: 95%;
+  border-radius: 15px;
+}
+
+a {
+  color: rgb(123, 255, 0);
+}
+
+.PostStoRY {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: orange;
+  border-radius: 50px;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 200ms;
+}
+
+.PostStoRY:hover {
+  background: orangered;
+  transform: rotate(90deg);
+}
+
+#myInput {
+  background-color: black;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  color: white;
+  outline: none;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #000000;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #000000;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #272727;
+}
+
+.Friend_CHAT {
+  width: 100%;
+  height: 5em;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  background: rgb(255, 253, 253);
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  font-size: 40px;
+  border: 0px;
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-left: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

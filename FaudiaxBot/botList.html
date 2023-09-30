@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FauChat</title>
+    <link rel="stylesheet" href="Faudiaxbot.css">
+    <link rel="shortcut icon" type="x-icon" href="../images/FauChat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="HomeBODY">
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search friends..">
+        
+        <ul id="myUL">
+            <li>
+                <a href="FaudiaxBot.html">Faudiax</a>
+            </li>
+
+            <li><a href="#">Quack</a></li>
+          
+            <li><a href="#">Azam</a></li>
+        </ul>
+
+    </div>
+
+    <div class="top-bar">
+
+        <img src="../images/FauChat.png" alt="" class="LogoTop">
+        <h1 class="mainlogo">FauChat | Friends</h1>
+  
+        <button onclick="openProfile()">  </button>
+  
+    </div>
+
+    <div class="bottom-bar">
+
+        <a href="Fauchat.html" class="Bottombar-Search">
+            <ion-icon name="home-outline" size="large"></ion-icon>
+          </a>
+  
+          <a href="Search Results/Search.html" class="Bottombar-Search">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+          </a>
+  
+          <a href="#"" class="Bottombar-Search_active">
+            <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
+          </a>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="nav.js"></script>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+        
+</body>
+</html>

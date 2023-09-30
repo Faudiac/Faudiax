@@ -1,8 +1,8 @@
 const userMessage = [
-    ["hi", "hey", "hello"],
+    ["hi", "hey", "hello", "yellow", "sup", "yo"],
     ["sure", "yes", "no"],
-    ["are you genious", "are you nerd", "are you intelligent"],
-    ["i hate you", "i dont like you"],
+    ["are you genious", "are you nerd", "are you intelligent", "are you a bot"],
+    ["i hate you", "i dont like you","u suck"],
     ["how are you", "how is life", "how are things", "how are you doing","hru"],
     ["how is corona", "how is covid 19", "how is covid19 situation"],
     ["what are you doing", "what is going on", "what is up"],
@@ -29,12 +29,12 @@ const userMessage = [
     ["corona", "covid19", "coronavirus"],
     ["you are funny"],
     ["i dont know"],
-    ["boring"],
+    ["boring", "i'm bored", "im bored", "i am bored", "wanna chat", "wanna chat?"],
     ["im tired"]
   ];
   const botReply = [
-    ["Hello!", "Hi!", "Hey!", "Hi there!"],
-    ["Okay"],
+    ["Hello!", "Hi!", "Hey!", "Hi there!", "orange is better", "Sup", "yoo wassup"],
+    ["Okay", "ok", "nice"],
     ["Yes I am! "],
     ["I'm sorry about that. But I like you dude."],
     [
@@ -52,7 +52,7 @@ const userMessage = [
     ],
     ["I am always young."],
     ["I am just a bot", "I am a bot. What are you?"],
-    ["Sabitha Kuppusamy"],
+    ["sorry what?"],
     ["I am Faudiax", "Faudiax"],
     ["I love you too ♡", "Aw Me too♡"],
     ["Have you ever felt bad?", "Glad to hear it"],
@@ -66,15 +66,16 @@ const userMessage = [
     ["Please stay home"],
     ["Glad to hear it"],
     ["Say something interesting"],
-    ["Sorry for that. Let's chat!"],
+    ["Sorry for that. Let's chat!", "yeah lets chat", "sure, what would you like to talk about my friend"],
     ["Take some rest, Dude!"]
   ];
   
   const alternative = [
-    "Same here, dude.",
-    "woah",
+    "damn",
     "...",
     "okaayy",
+    "ok",
+    "bruh",
   ];
   
   const synth = window.speechSynthesis;
