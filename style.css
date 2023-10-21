@@ -96,6 +96,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  font-family: monospace;
+}
+
+.SideNAV-Search:hover {
+  background: rgba(255, 85, 0, 0.886);
 }
 
 .SideNAV-Search_active {
@@ -110,6 +115,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: monospace;
+  margin-top: 10px;
 }
 
 .Search-finder {
@@ -158,7 +165,7 @@ body {
   right: 0;
   background-color: #000000;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: px;
   transition: 0.1s;
 }
 
@@ -166,13 +173,10 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
   display: block;
+  color: white;
 }
 
-.Search-Nav a:hover {
-  color: #f1f1f1;
-}
 
 .Search-Nav .closebtn {
   position: absolute;
@@ -850,4 +854,10 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 10px;
+}
+
+.MiniAd {
+  margin: 30px;
+  border-radius: 20px;
+  width: 85%;
 }
