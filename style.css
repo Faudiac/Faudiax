@@ -10,7 +10,7 @@ body {
 .body {
   width: 90%;
   height: auto;
-  margin: 5em auto;
+  margin: 1em auto;
 }
 
 .body2 {
@@ -214,7 +214,7 @@ body {
 
 .search-container {
   width: 90%;
-  margin: 3em auto;
+  margin: 1em auto;
   height: 3em;
   background: rgba(245, 222, 179, 0);
   display: flex;
@@ -226,7 +226,8 @@ body {
 
 .search-container3 {
   width: 90%;
-  margin: 6em auto;
+  margin: 1em auto;
+  margin-top: 6em;
   height: 3em;
   background: rgba(245, 222, 179, 0);
   display: flex;
@@ -272,7 +273,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: rgb(177, 177, 177);
+  background: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.551);
 }
 
@@ -379,8 +380,9 @@ body {
 }
 
 .line-rongu {
-  width: 100%;
+  width: 60%;
   height: 1.5px;
+  margin: 1em auto;
   background: rgb(255, 94, 0);
 }
 
@@ -624,7 +626,7 @@ h4 {
 
 .note {
   color: rgb(255, 5, 5);
-  margin: 30px;
+  margin-left: 30px;
 }
 
 /********* PROFILE *********/

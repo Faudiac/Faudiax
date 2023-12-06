@@ -14,11 +14,11 @@ function openPage() {
    }
     
     if (x === "Faudynews") {
-      window.open("../Search Results/R=FaudyNEWS.html");
+      window.open("R=FaudyNEWS.html");
     }
   
     else {
-      window.open("../Search Results/404.html");
+      window.open("404.html");
     }
   }
   
