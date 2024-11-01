@@ -142,7 +142,7 @@ body .card {
   body .card #message-section .message {
     color: #ffffff;
     clear: both;
-    line-height: 5vw;
+    line-height: 2vw;
     font-size: 1.2vw;
     padding: 8px;
     position: relative;

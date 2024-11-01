@@ -1,9 +1,10 @@
 const userMessage = [
-    ["hi", "hey", "hello", "yellow", "sup", "yo"],
+    ["hi", "hey", "hello", "yellow", "sup", "yo", "yoo"],
+    ["im black"],
     ["sure", "yes", "no"],
-    ["are you genious", "are you nerd", "are you intelligent", "are you a bot"],
-    ["i hate you", "i dont like you","u suck"],
-    ["how are you", "how is life", "how are things", "how are you doing","hru"],
+    ["are you genious", "are you nerd", "are you intelligent", "are you a bot", ""],
+    ["i hate you", "i dont like you","u suck", "you suck"],
+    ["how are you", "how is life", "how are things", "how are you doing","hru", "whats up", "wassup"],
     ["how is corona", "how is covid 19", "how is covid19 situation"],
     ["what are you doing", "what is going on", "what is up"],
     ["how old are you"],
@@ -15,7 +16,10 @@ const userMessage = [
       "your name",
       "may i know your name",
       "what is your name",
-      "what call yourself"
+      "what call yourself",
+      "what is ur name",
+      "whats ur name",
+      "wats ur name",
     ],
     ["i love you"],
     ["happy", "good", "fun", "wonderful", "fantastic", "cool", "very good"],
@@ -29,14 +33,16 @@ const userMessage = [
     ["corona", "covid19", "coronavirus"],
     ["you are funny"],
     ["i dont know"],
+    ["you suck"],
     ["boring", "i'm bored", "im bored", "i am bored", "wanna chat", "wanna chat?"],
     ["im tired"]
   ];
   const botReply = [
     ["Hello!", "Hi!", "Hey!", "Hi there!", "orange is better", "Sup", "yoo wassup"],
+    ["wassup my ni"],
     ["Okay", "ok", "nice"],
     ["Yes I am! "],
-    ["I'm sorry about that. But I like you dude."],
+    ["I'm sorry about that. But I like you dude.", "did i ask for your opinion you digusting ugly little freak who has no life that you have to chat with a bot smarter than you until bro here who says oh you suck finds a friend and let me tell you what bro, No one like you dude. Your probably wondering why am you such a failure. Number one sherlock go get a life"],
     [
       "Fine... how are you?",
       "Pretty well, how are you?",
@@ -46,7 +52,7 @@ const userMessage = [
   
     [
       "Nothing much",
-      "About to go to sleep",
+      "chatting with you",
       "Can you guess?",
       "I don't know actually"
     ],
@@ -66,6 +72,7 @@ const userMessage = [
     ["Please stay home"],
     ["Glad to hear it"],
     ["Say something interesting"],
+    ["did i ask for your opinion you digusting ugly little freak who has no life that you have to chat with a bot smarter than you until bro here who says oh suck finds a friend and let me tell you what bro, One one like you dude. Your probably wondering why am you such a failure. Number one sherlock go get a life"]
     ["Sorry for that. Let's chat!", "yeah lets chat", "sure, what would you like to talk about my friend"],
     ["Take some rest, Dude!"]
   ];
@@ -76,6 +83,7 @@ const userMessage = [
     "okaayy",
     "ok",
     "bruh",
+    "you suck",
   ];
   
   const synth = window.speechSynthesis;
